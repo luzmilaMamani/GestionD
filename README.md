@@ -4,14 +4,14 @@ API REST completa para gestionar competencias deportivas universitarias con aute
 
 ## Características
 
-- ✅ CRUD completo para todas las entidades
-- ✅ Autenticación JWT con roles
-- ✅ Control de acceso basado en roles (RBAC)
-- ✅ Validaciones con class-validator
-- ✅ Documentación automática con Swagger
-- ✅ Base de datos PostgreSQL con TypeORM
-- ✅ Estructura modular de NestJS
-- ✅ Relaciones entre entidades correctamente configuradas
+- CRUD completo para todas las entidades
+- Autenticación JWT con roles
+- Control de acceso basado en roles (RBAC)
+- Validaciones con class-validator
+- Documentación automática con Swagger
+- Base de datos PostgreSQL con TypeORM
+- Estructura modular de NestJS
+- Relaciones entre entidades correctamente configuradas
 
 ## Entidades
 
@@ -199,36 +199,6 @@ Algunos endpoints pueden estar restringidos a ciertos roles. Ejemplo:
 findAll() {
   return this.service.findAll();
 }
-```
-
-## Estructura del Proyecto
-
-```
-gestionD/
-├── src/
-│   ├── auth/
-│   │   ├── auth.service.ts
-│   │   ├── auth.controller.ts
-│   │   ├── auth.module.ts
-│   │   ├── jwt.strategy.ts
-│   │   ├── jwt-auth.guard.ts
-│   │   ├── roles.guard.ts
-│   │   ├── roles.decorator.ts
-│   │   └── dto/
-│   ├── carrera/
-│   ├── disciplina/
-│   ├── persona/
-│   ├── rol/
-│   ├── equipo/
-│   ├── torneo/
-│   ├── fixture/
-│   └── app.module.ts
-│   └── main.ts
-├── package.json
-├── tsconfig.json
-└── .env.example
-```
-
 ## Tecnologías
 
 - **NestJS**: Framework Node.js
@@ -241,14 +211,16 @@ gestionD/
 ## Variables de Entorno
 
 ```
-DB_HOST         - Host de PostgreSQL
-DB_PORT         - Puerto de PostgreSQL
-DB_USER         - Usuario de PostgreSQL
-DB_PASS         - Contraseña de PostgreSQL
-DB_NAME         - Nombre de la base de datos
-JWT_SECRET      - Clave secreta para JWT
-NODE_ENV        - Entorno (development/production)
-```
+
+DB_HOST - Host de PostgreSQL
+DB_PORT - Puerto de PostgreSQL
+DB_USER - Usuario de PostgreSQL
+DB_PASS - Contraseña de PostgreSQL
+DB_NAME - Nombre de la base de datos
+JWT_SECRET - Clave secreta para JWT
+NODE_ENV - Entorno (development/production)
+
+````
 
 ## Scripts Disponibles
 
@@ -256,7 +228,7 @@ NODE_ENV        - Entorno (development/production)
 npm run start       # Iniciar producción
 npm run start:dev   # Iniciar desarrollo con hot reload
 npm run build       # Compilar TypeScript
-```
+````
 
 ## Licencia
 
